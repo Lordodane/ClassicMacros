@@ -132,11 +132,12 @@ function SlashCmdList.STARTATTACK(msg, editbox)
 	if not isAttacking or not UnitExists("target") then
 		AttackTarget()
 		isAttacking = 1
-	else
-		local assist = GetCVar("assistAttack")
-		SetCVar("assistAttack",1)
-		AssistUnit("player")
-		SetCVar("assistAttack",assist)
+	--culprit--
+	--else
+	--	local assist = GetCVar("assistAttack")
+	--	SetCVar("assistAttack",1)
+	--	AssistUnit("player")
+	--	SetCVar("assistAttack",assist)
 	end
 end
 
